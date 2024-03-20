@@ -18,6 +18,7 @@ public class Patient {
     private Collection<RendezVous> rendezVous;
 
     public String toString(){
-        return "ID: " + id + "\n" + "Name: " + name + "\n" + "Birth Day: " + birthDay + "\n" + (sick? "Patient is sick" : "Patient is healthy");
+        return "ID: " + id + "\n" + "Name: " + name + "\n" + "Birth Day: " + birthDay + "\n" +
+                (sick? "Patient is sick" : "Patient is healthy");
     }
 }

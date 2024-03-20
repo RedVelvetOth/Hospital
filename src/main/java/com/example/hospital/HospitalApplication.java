@@ -77,33 +77,33 @@ public class HospitalApplication implements CommandLineRunner {
             consultationRepository.save(consultation);
         }
 
-//        // List All Patients
-//        List<Patient> patients = patientRepository.findAll();
-//        patients.forEach( p -> {
-//            System.out.println(p.toString());
-//        });
-//
-//        // Find a patient
-//        Patient patient = patientRepository.findById(1L).get();
-//        System.out.println("**********");
-//        System.out.println(patient.getId());
-//        System.out.println(patient.getName());
-//        System.out.println(patient.getBirthDay());
-//        System.out.println("**********");
-//
-//        // Find patient by name
-//        patients = patientRepository.findByNameContains("Theo");
-//        patients.forEach( p -> {
-//            System.out.println(p.toString());
-//        });
-//
-//        // Modify a patient
-//        patient = patientRepository.findById(2L).get();
-//        patient.setName("Fosca");
-//        System.out.println(patient.toString());
-//
-//        // Drop a patient from the database
-//        patientRepository.delete(patient);
+        // List All Patients
+        List<Patient> patients = patientRepository.findAll();
+        patients.forEach( p -> {
+            System.out.println(p.toString());
+        });
+
+        // Find a patient
+        Patient patient = patientRepository.findById(1L).get();
+        System.out.println("**********");
+        System.out.println(patient.getId());
+        System.out.println(patient.getName());
+        System.out.println(patient.getBirthDay());
+        System.out.println("**********");
+
+        // Find patient by name
+        patients = patientRepository.findByNameContains("Theo");
+        patients.forEach( p -> {
+            System.out.println(p.toString());
+        });
+
+        // Modify a patient
+        patient = patientRepository.findById(2L).get();
+        patient.setName("Fosca");
+        System.out.println(patient.toString());
+
+        // Drop a patient from the database
+        patientRepository.delete(patient);
 
 
     }
