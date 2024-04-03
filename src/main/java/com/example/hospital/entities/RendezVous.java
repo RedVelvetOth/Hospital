@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.util.Date;
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @Setter @Getter
+@Data @NoArgsConstructor @AllArgsConstructor
 public class RendezVous {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)

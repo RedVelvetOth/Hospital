@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.util.Date;
 @Entity
-@Data @NoArgsConstructor @AllArgsConstructor @Getter @Setter
+@Data @NoArgsConstructor @AllArgsConstructor
 public class Consultation {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

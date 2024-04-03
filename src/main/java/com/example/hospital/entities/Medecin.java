@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.Collection;
 
 @Entity
-@Data @AllArgsConstructor @NoArgsConstructor @Setter @Getter
+@Data @AllArgsConstructor @NoArgsConstructor
 public class Medecin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
